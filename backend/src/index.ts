@@ -8,7 +8,7 @@ const app = new Hono();
 app.use(
   "/api/*",
   cors({
-    origin: ["https://api-to-database.vercel.app/"],
+    origin: ["https://my-backendapi.vercel.app/","https://api-to-database.vercel.app/"],
   })
 );
 
