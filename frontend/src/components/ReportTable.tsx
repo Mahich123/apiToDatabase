@@ -13,7 +13,7 @@ export default function ReportTable() {
   const { data, error, isLoading } = useQuery({
     queryKey: ["order"],
     queryFn: async () => {
-      const res = await fetch("https://honostoredb.onrender.com//api/data");
+      const res = await fetch("https://honostoredb.onrender.com/api/data");
 
       if (!res.ok) {
         throw new Error("Error fetching data");
