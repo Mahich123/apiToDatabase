@@ -16,7 +16,7 @@ const sentTobackend = async (
 ) => {
   
   try {
-    const res = await fetch("/api/store", {
+    const res = await fetch("https://honostoredb.onrender.com/api/store", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
