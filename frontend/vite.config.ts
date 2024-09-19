@@ -12,7 +12,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: 'https://my-backendapi.vercel.app/',
+        target: 'https://honostoredb.onrender.com/',
         changeOrigin: true,
       }
     }
