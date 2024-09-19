@@ -1,10 +1,9 @@
 import { drizzle } from "drizzle-orm/node-postgres";
-import { Client } from "pg";
+import { Pool } from "pg";
 
-const client = new Client({
- connectionString: process.env.SUPABASE_DB_URL!,
+const pool = new Pool({
+  connectionString: process.env.SUPABASE_DB_URL!,
 });
 
-await client.connect();
-export const db = drizzle(client);
-
+await pool.connect();
+export const db = drizzle(pool);
