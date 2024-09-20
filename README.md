@@ -56,3 +56,41 @@ After successfully storing the data in the respective `users` , `products` and `
 [![Tanstack Query](https://img.shields.io/badge/tanstack%20query-D8D8D8?style=for-the-badge)](https://tanstack.com/query/latest)
 [![Supabase](https://img.shields.io/badge/supabase-D8D8D8?style=for-the-badge&logo=supabase)](https://supabase.com/)
 
+# Project Setup
+
+## 1. Frontend:
+
+```sh
+  cd frontend
+
+  # Install all dependencies
+  bun i
+  
+  # Run the project
+  bun dev
+```
+
+## 2. Backend:
+
+```sh
+  cd backend
+
+  # Install all dependencies
+  bun i
+```
+
+create a ``.env`` and store database url in it
+
+```sh
+  # Create .env file at the root of the directory
+
+  SUPABASE_DB_URL=""
+```
+
+start the hono server
+
+```sh
+  bun dev
+```
+
+Now you're good to go! The project is up and running.
