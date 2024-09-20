@@ -1,11 +1,24 @@
-To install dependencies:
+# Project Setup
+
+## 2. Backend:
+
 ```sh
-bun install
+  cd backend
+
+  # Install all dependencies
+  bun i
 ```
 
-To run:
+create a ``.env`` and store database url in it
+
 ```sh
-bun run dev
+  # Create .env file at the root of the directory
+
+  SUPABASE_DB_URL=""
 ```
 
-open http://localhost:3000
+start the hono server
+
+```sh
+  bun dev
+```
